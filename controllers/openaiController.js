@@ -13,7 +13,7 @@ const generateImage = async (req, res) => {
 
   try {
     const response = await openai.createImage({
-      prompt: 'Polar Bear with a Beer',
+      prompt,
       n: 1,
       size: '512x512',
     });
