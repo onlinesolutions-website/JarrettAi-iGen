@@ -56,11 +56,82 @@ body {
   background: var(--primary-color);
 }
 
-.showcase h1 {
+ h1 {
   font-size: 2.5rem;
-  color: rgb(255, 255, 255);
   text-align: center;
   padding: 1rem 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #00b8ff, #ff0080);
+  text-decoration: none;
+  margin: 5;
+  padding: 5;
+  animation: gradient-animation 5s linear infinite;
+  height:40%;
+  width: 40%;
+  border: 2px solid;
+  border-image-source: linear-gradient(to right, #00b8ff, #ff0080);
+  border-image-slice: 1;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+p {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #00b8ff, #ff0080);
+  text-decoration: none;
+  margin: 5;
+  padding: 5;
+  animation: gradient-animation 5s linear infinite;
+  height:40%;
+  width: 40%;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+p1 {
+  font-size: 2.5rem;
+  text-align: auto;
+  padding: 1rem 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #00b8ff, #ff0080);
+  text-decoration: none;
+  margin: 5;
+  padding: 5;
+  animation: gradient-animation 5s linear infinite;
+  height:40%;
+  width: 40%;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .showcase form {
